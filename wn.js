@@ -37,8 +37,8 @@ single[k].click();
  
          }
 else {
-    window.onbeforeunload='javascript:return true;';
-document.getElementById("js_return_btn").click()
+    //window.onbeforeunload='javascript:return true;';
+//document.getElementById("js_return_btn").click()
 }
 
 	}
