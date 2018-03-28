@@ -8,9 +8,9 @@
 // @grant        none
 // ==/UserScript==
 window.helloworld = function() {
- 
 
- 
+
+
 //获取q标签文字内容
 var d =document.getElementsByClassName("com-mark-pq-content");
 
@@ -21,6 +21,7 @@ var keywordval = d[0].innerText;
 
 var nodeList = d[0].getElementsByTagName("strong");
 var keywordval0 = nodeList[0].innerText;
+var keywordval2 = nodeList[0].innerText;
 //alert(keywordval0);
 
 
@@ -32,9 +33,11 @@ var yw = y.innerText;
 
 
 var searchVal2 =  keywordval0;
-
+var searchVal3 =  keywordval2;
 var reg1 = new RegExp("("+searchVal2 +")","ig");
 yw = yw.replace(reg1,"<font color=blue>$1</font>");
+    var reg2 = new RegExp("("+searchVal3 +")","ig");
+yw = yw.replace(reg2,"<font color=blue>$1</font>");
 
 //alert(yw);
 
@@ -43,10 +46,10 @@ yw = yw.replace(reg1,"<font color=blue>$1</font>");
 
  //高亮要查找的字符串
  com_mark_reference_1.innerHTML =yw;
- com_mark_reference_3.innerHTML = text;
-com_mark_reference_1.innerHTML="";
 
-var e_keyword2 =eky;
+com_mark_reference_2.innerHTML="";
+
+var e_keyword2 = keywordval;
     //alert(e_keyword2);
  var xuanxiang2 = localStorage.getItem(e_keyword2);
    //alert(xuanxiang2);
