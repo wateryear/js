@@ -21,8 +21,10 @@ var keywordval = d[0].innerText;
 
 var nodeList = d[0].getElementsByTagName("strong");
 var keywordval0 = nodeList[0].innerText;
-var keywordval2 = nodeList[0].innerText;
-//alert(keywordval0);
+var keywordval2 = nodeList[2].innerText;
+    var keywordval3 = nodeList[3].innerText;
+     var str_before = keywordval3.split("(")[0];
+ // alert(str_before);
 
 
 //获取原文内容
@@ -34,10 +36,15 @@ var yw = y.innerText;
 
 var searchVal2 =  keywordval0;
 var searchVal3 =  keywordval2;
+var searchVal4 =  str_before;
 var reg1 = new RegExp("("+searchVal2 +")","ig");
-yw = yw.replace(reg1,"<font color=blue>$1</font>");
+yw = yw.replace(reg1,"<font color=red>$1</font>");
     var reg2 = new RegExp("("+searchVal3 +")","ig");
 yw = yw.replace(reg2,"<font color=blue>$1</font>");
+    var reg3 = new RegExp("("+searchVal4 +")","ig");
+yw = yw.replace(reg3,"<font color=red>$1</font>");
+
+
 
 //alert(yw);
 
@@ -48,36 +55,6 @@ yw = yw.replace(reg2,"<font color=blue>$1</font>");
  com_mark_reference_1.innerHTML =yw;
 
 com_mark_reference_2.innerHTML="";
-
-var e_keyword2 = keywordval;
-    //alert(e_keyword2);
- var xuanxiang2 = localStorage.getItem(e_keyword2);
-   //alert(xuanxiang2);
-  if (xuanxiang2==0){
-        $("div[data-id='101']").click();
-  $("#js_submit_btn")[0].click();
-       // setTimeout(tijiao, 5000);
-
-
-                  }
-           else if(xuanxiang2==1){
-                $("div[data-id='102']").click();
-                $("#js_submit_btn")[0].click();
-                           }
-
-           else if(xuanxiang2==2){
-                             //alert(xuanxiang);
-
-                $("div[data-id='103']").click();
-                $("#js_submit_btn")[0].click();
-                           }
-
- else if(xuanxiang2==null){
-         //alert('选W');
-  // document.getElementById("js_return_btn").click();
-
-
-		 }
 
 
 
