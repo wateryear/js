@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name         自动播放
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://test.baidu.com/mark/*
+// @grant        none
+// ==/UserScript==
+window.helloworld = function() {
+     var d = document.getElementById("com_mark_reference_2");
+       var nodeList = d.getElementsByTagName("audio");
+
+      var multi = document.getElementsByClassName("com-mark-pr-content com-mark-pr-audio");
+
+        var keywordval =  multi[0].innerHTML;
+       var text=keywordval.replace(/controls=/, 'autoplay="autoplay" controls= ') ;
+       // alert(text);
+      com_mark_reference_2.innerHTML =text;
+
+
+}
+
+window.setInterval("helloworld()", 100);
+
