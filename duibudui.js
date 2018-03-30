@@ -8,8 +8,8 @@
 // @grant        none
 // ==/UserScript==
 window.helloworld = function() {
-
-
+var y =document.getElementById("com_mark_reference_2");
+var yw = y.innerText;
 
 //获取q标签文字内容
 var d =document.getElementsByClassName("com-mark-pq-content");
@@ -20,6 +20,7 @@ var keywordval = d[0].innerText;
 
 
 var nodeList = d[0].getElementsByTagName("strong");
+
 var keywordval0 = nodeList[0].innerText;
 var keywordval2 = nodeList[2].innerText;
     var keywordval3 = nodeList[3].innerText;
@@ -54,7 +55,40 @@ yw = yw.replace(reg3,"<font color=red>$1</font>");
  //高亮要查找的字符串
  com_mark_reference_1.innerHTML =yw;
 
-com_mark_reference_2.innerHTML="";
+com_mark_reference_2.innerHTML="a";
+
+
+
+    var e_keyword2 =keywordval;
+    //alert(e_keyword2);
+ var xuanxiang2 = localStorage.getItem(e_keyword2);
+   //alert(xuanxiang2);
+  if (xuanxiang2==0){
+        $("div[data-id='101']").click();
+  $("#js_submit_btn")[0].click();
+       // setTimeout(tijiao, 5000);
+
+
+                  }
+           else if(xuanxiang2==1){
+                $("div[data-id='102']").click();
+                $("#js_submit_btn")[0].click();
+                           }
+
+           else if(xuanxiang2==2){
+                             //alert(xuanxiang);
+
+                $("div[data-id='103']").click();
+                $("#js_submit_btn")[0].click();
+                           }
+
+ else if(xuanxiang2==null){
+         //alert('选W');
+  // document.getElementById("js_return_btn").click();
+
+
+		 }
+
 
 
 
