@@ -1,0 +1,70 @@
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://test.baidu.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+
+
+   $(document).keydown(function(event){
+    var e = event || window.event;
+    var k = e.keyCode || e.which;
+    switch(k) {
+        case 65:
+        $("input[name='mark-rect-attr-choice-rect-type']")[0].click();
+        //…
+        break;
+        case 66:
+		$("input[name='mark-rect-attr-choice-rect-type']")[1].click();
+        //…
+        break;
+		  case 83:
+		  $("input[name='mark-rect-attr-choice-rect-type']")[2].click();
+        //…
+        break;
+		  case 68:
+		  $("input[name='mark-rect-attr-choice-rect-type']")[3].click();
+        //…
+        break;
+		  case 70:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[4].click();
+		  
+        //…
+        break;
+		  case 81:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[5].click();
+		  
+        //…
+        break;
+		  case 87:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[6].click();
+        //…
+        break;
+		  case 69:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[7].click();
+        //…
+        break;
+		  case 82:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[8].click();
+        //…
+        break;
+		  case 71:
+		   $("input[name='mark-rect-attr-choice-rect-type']")[10].click();
+        //…
+        break;
+		  case 32:
+		   $("#js_submit_btn")[0].click();
+        //…
+        break;
+        }
+        return false;
+});
+
+
+    // Your code here...
+})();
