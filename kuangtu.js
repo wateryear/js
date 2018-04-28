@@ -173,6 +173,7 @@ try{
    }
       
        $("#js_submit_btn")[0].click();
+   window.setTimeout("window.scrollTo(0,135)", 3000);
      
 }
 catch(e){}
