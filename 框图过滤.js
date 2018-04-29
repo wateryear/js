@@ -1,0 +1,17 @@
+test.baidu.com###hotKeyLabelDiv
+test.baidu.com###item_tips
+test.baidu.com###mark_right_rate_bar
+test.baidu.com##.active
+test.baidu.com##.ct-trace-point
+test.baidu.com##.dn
+test.baidu.com##.info-close
+test.baidu.com##.info-view
+test.baidu.com##.main-head
+test.baidu.com##.mark-rect-draw-type
+test.baidu.com##.mark-top-bar-info
+test.baidu.com##.op-link
+test.baidu.com##.operation-info
+test.baidu.com##.pro-top-nav
+test.baidu.com##.right-rate-process-animate
+test.baidu.com##.sidebar-item
+test.baidu.com##.task-flow-wrap
