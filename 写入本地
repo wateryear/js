@@ -2,6 +2,6 @@
 var naid = Number(localStorage.getItem("key"))+1;
 
 window.localStorage.setItem('key', naid);
+var text1=document.getElementById("text-poiname").value;
 
-
-window.localStorage.setItem(naid,cizu);
+window.localStorage.setItem(naid,text1);
