@@ -1,0 +1,7 @@
+
+var naid = Number(localStorage.getItem("key"))+1;
+
+window.localStorage.setItem('key', naid);
+
+
+window.localStorage.setItem(naid,cizu);
