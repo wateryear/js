@@ -12,14 +12,14 @@ var y =document.getElementById("com_mark_reference_2");
 var yw = y.innerText;
 
 //获取q标签文字内容
-var d =document.getElementsByClassName("com-mark-pq-content");
+var d =document.getElementsByClassName("question-title");
+var nodeList = d[0].getElementsByTagName("span");
+var keywordval = nodeList[0].innerText;
 
-var keywordval = d[0].innerText;
-
-//alert(keywordval);
+alert(keywordval);
 
 
-var nodeList = d[0].getElementsByTagName("strong");
+var nodeList = d[0].getElementsByTagName("span");
 
 var keywordval0 = nodeList[0].innerText;
 var keywordval2 = nodeList[2].innerText;
